@@ -1,12 +1,31 @@
 {
   "name": "dropdownlist",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a simple and light dropdownlist with autocomplete",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "rimraf ./example/scripts/* && webpack --config webpack.config.js",
+    "webpack": "rimraf ./dist/* && webpack --config webpack.dist.config.js",
+    "tsc": "rimraf ./lib/* && tsc",
+    "build":"npm run tsc && npm run webpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+      "react",
+      "dropdownlist",
+      "select",
+      "autocomplete"
+  ],
+  "author": "Yousef Gholivand",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "rimraf": "^2.5.2",
+    "ts-loader": "^0.8.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
 }
