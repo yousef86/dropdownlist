@@ -51,29 +51,18 @@
     visibility: hidden;
     width: 10px;
 }
-.react-dropdownlist__label::after {
-    background-color: #3f51b5;
-    bottom: 20px;
-    content: "";
-    height: 2px;
-    left: 45%;
-    position: absolute;
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: hidden;
-    width: 10px;
+
+.react-dropdownlist.is-focused .react-dropdownlist__label::after {
+    left: 0;
+    visibility: visible;
+    width: 100%;
 }
-*::after, *::before {
-    box-sizing: border-box;
-}
+
 .react-dropdownlist--floating-label .react-dropdownlist__label {
     transition-duration: 0.2s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.react-dropdownlist--floating-label .react-dropdownlist__label {
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .react-dropdownlist__label {
     bottom: 0;
     color: rgba(0, 0, 0, 0.26);
@@ -89,24 +78,7 @@
     white-space: nowrap;
     width: 100%;
 }
-.react-dropdownlist__label {
-    bottom: 0;
-    color: rgba(0, 0, 0, 0.26);
-    display: block;
-    font-size: 16px;
-    left: 0;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-align: left;
-    top: 24px;
-    white-space: nowrap;
-    width: 100%;
-}
-.react-dropdownlist__label, .react-dropdownlist__input {
-    padding-right: 29px !important;
-}
+
 
 .react-dropdownlist label {
     display: inline-block;
@@ -148,45 +120,7 @@
     width: 100%;
 }
 
-.react-dropdownlist__label::after {
-    background-color: #3f51b5;
-    bottom: 20px;
-    content: "";
-    height: 2px;
-    left: 45%;
-    position: absolute;
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: hidden;
-    width: 10px;
-}
-*::after, *::before {
-    box-sizing: border-box;
-}
-.react-dropdownlist--floating-label .react-dropdownlist__label {
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.react-dropdownlist__label {
-    bottom: 0;
-    color: rgba(0, 0, 0, 0.26);
-    display: block;
-    font-size: 16px;
-    left: 0;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-align: left;
-    top: 24px;
-    white-space: nowrap;
-    width: 100%;
-}
-.mdl-t
-extfield__label, .react-dropdownlist__input {
-    padding-right: 29px !important;
-}
 
 .react-dropdownlist--floating-label.is-focused .react-dropdownlist__label, .react-dropdownlist--floating-label.is-dirty .react-dropdownlist__label, .react-dropdownlist--floating-label.has-placeholder .react-dropdownlist__label {
     color: rgb(63, 81, 181);

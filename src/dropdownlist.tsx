@@ -4,9 +4,7 @@ import ReactDom = require("react-dom");
 interface PropType {
     keyFieldName?: string;
     textFieldName?: string;
-    type?: string;
     title?: string;
-    textboxName?: string;
     placeholder?: string;
     data?: any[];
     ref?: string;

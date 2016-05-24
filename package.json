@@ -1,7 +1,7 @@
 {
   "name": "dropdownlist",
   "version": "0.1.0",
-  "description": "a simple and light dropdownlist with autocomplete",
+  "description": "A simple and light dropdownlist with autocomplete.",
   "main": "./lib/index.js",
   "scripts": {
     "example": "rimraf ./example/scripts/* && webpack --config webpack.config.js",

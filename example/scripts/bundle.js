@@ -58,10 +58,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDom = __webpack_require__(38);
 	var React = __webpack_require__(2);
 
-
-	var itemclick = function(id,text){
-
-	}
+	    var sampleData = [
+	        {id:"1",text:"Paris"},
+	        {id:"2",text:"California"},
+	        {id:"3",text:"Amesterdam"},
+	        {id:"4",text:"Buenos Aires"},
+	        {id:"5",text:"Lisbon"},
+	        {id:"6",text:"London"}
+	    ];
 
 	ReactDom.render(
 	    React.createElement(DropDownList,{
@@ -71,19 +75,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	var txtValue = document.getElementById("selectedItem");
 	txtValue.innerHTML = id;
 	},
-	        data:[{
-	            id:"1",
-	            text:"ali"
-	        },
-	    {
-	        id:"2",
-	        text:"aaaa"
-	    },
-	    {
-	    id:"3",
-	    text:"sss"
-	}
-	]
+
+	data:sampleData
 
 	    },null),
 	    document.getElementById("react-root")
