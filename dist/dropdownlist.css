@@ -1,0 +1,153 @@
+
+
+.react-dropdownlist-DropDownListResultSection{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    min-height: 100px;
+    max-height: 150px !important;
+    overflow-y:scroll;
+    min-width: 150px;
+    position: absolute;
+    z-index: 100;
+}
+
+.react-dropdownlist-DropDownList-css .react-dropdownlist{
+    padding : 20px 0 0 0 !important;
+}
+
+.react-dropdownlist-DropDownList-css .react-dropdownlist__label::after{
+    bottom : 0 !important;
+}
+
+
+.react-dropdownlist-ValueSectionDiv{
+    display:inline-block;
+    min-width:25px;
+}
+
+.react-dropdownlist-TextSectionDiv{
+    display:inline-block;
+    min-width:25px;
+    clear:both;
+}
+
+.react-dropdownlist-RowSelectionDiv:hover{
+    background-color : lightskyblue;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+.react-dropdownlist__label::after {
+    background-color: rgb(63, 81, 181);
+    bottom: 20px;
+    content: "";
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    width: 10px;
+}
+
+.react-dropdownlist.is-focused .react-dropdownlist__label::after {
+    left: 0;
+    visibility: visible;
+    width: 100%;
+}
+
+.react-dropdownlist--floating-label .react-dropdownlist__label {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.react-dropdownlist__label {
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.26);
+    display: block;
+    font-size: 16px;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 24px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+.react-dropdownlist label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    max-width: 100%;
+    margin-bottom: 0 !important;
+}
+
+
+.react-dropdownlist {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    max-width: 100%;
+    padding: 20px 0;
+    position: relative;
+    width: 300px;
+}
+
+.react-dropdownlist__input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color rgba(0, 0, 0, 0.12);
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: inherit;
+    display: block;
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 4px 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+.react-dropdownlist--floating-label.is-focused .react-dropdownlist__label, .react-dropdownlist--floating-label.is-dirty .react-dropdownlist__label, .react-dropdownlist--floating-label.has-placeholder .react-dropdownlist__label {
+    color: rgb(63, 81, 181);
+    font-size: 12px;
+    top: 4px;
+    visibility: visible;
+}
+
+.react-dropdownlist.is-focused .react-dropdownlist__input {
+    outline: medium none;
+}
+
+.react-dropdownlist--floating-label.is-focused .react-dropdownlist__expandable-holder .react-dropdownlist__label, .react-dropdownlist--floating-label.is-dirty .react-dropdownlist__expandable-holder .react-dropdownlist__label, .react-dropdownlist--floating-label.has-placeholder .react-dropdownlist__expandable-holder .react-dropdownlist__label {
+    top: -16px;
+}
+
+.react-dropdownlist.is-focused .react-dropdownlist__expandable-holder, .react-dropdownlist.is-dirty .react-dropdownlist__expandable-holder {
+    max-width: 600px;
+}
+
+.react-dropdownlist--floating-label.is-focused .react-dropdownlist__label, .react-dropdownlist--floating-label.is-dirty .react-dropdownlist__label, .react-dropdownlist--floating-label.has-placeholder .react-dropdownlist__label {
+    color: rgb(63, 81, 181);
+    font-size: 12px;
+    top: 4px;
+    visibility: visible;
+}
+
+.react-dropdownlist--floating-label.is-focused .react-dropdownlist__expandable-holder .react-dropdownlist__label, .react-dropdownlist--floating-label.is-dirty .react-dropdownlist__expandable-holder .react-dropdownlist__label, .react-dropdownlist--floating-label.has-placeholder .react-dropdownlist__expandable-holder .react-dropdownlist__label {
+    top: -16px;
+}

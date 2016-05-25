@@ -1,7 +1,7 @@
 {
   "name": "dropdownlist",
   "version": "0.1.0",
-  "description": "A simple and light dropdownlist with autocomplete.",
+  "description": "A simple and light react dropdownlist with autocomplete.",
   "main": "./lib/index.js",
   "scripts": {
     "example": "rimraf ./example/scripts/* && webpack --config webpack.config.js",
@@ -13,7 +13,13 @@
       "react",
       "dropdownlist",
       "select",
-      "autocomplete"
+      "autocomplete",
+      "react-component"
+  ],
+  "files":[
+      "dist",
+      "lib",
+      "README.md"
   ],
   "author": "Yousef Gholivand",
   "license": "MIT",

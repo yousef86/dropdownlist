@@ -19,7 +19,7 @@ onSelectedItemChange : (id,text)=>{
 var txtValue = document.getElementById("selectedItem");
 txtValue.innerHTML = id;
 },
-
+showValue="true"
 data:sampleData
 
     },null),
