@@ -25,7 +25,7 @@ var sampleData = [
 ];
 
 ReactDom.render(
-    <DropDownList title="Select a Item..." 
+    <DropDownList title="Select a Item..."
       onSelectedItemChange={(id,text)=>{
         let txtValue = document.getElementById("selectedItem");
         txtValue.innerHTML = id;
@@ -53,7 +53,7 @@ var sampleData = [
 ];
 
 ReactDom.render(
-    <DropDownList title="Select a Item..." 
+    <DropDownList title="Select a Item..."
       onSelectedItemChange={(id,text)=>{
         let txtValue = document.getElementById("selectedItem");
         txtValue.innerHTML = id;
@@ -66,10 +66,10 @@ ReactDom.render(
 
 ```
 
-If you want to show value field in dropdownlist, set showValue property : 
+If you want to show value field in dropdownlist, set showValue property :
 ```
 ReactDom.render(
-    <DropDownList title="Select a Item..." 
+    <DropDownList title="Select a Item..."
       onSelectedItemChange={(id,text)=>{
         let txtValue = document.getElementById("selectedItem");
         txtValue.innerHTML = id;
@@ -84,7 +84,13 @@ ReactDom.render(
 ##### build
 
 ```
-npm run tsc && npm run webpack
+npm run build
 
 ```
 
+##### example
+
+```
+npm run example
+
+```
